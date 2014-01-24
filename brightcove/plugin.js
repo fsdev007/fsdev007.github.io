@@ -7,6 +7,7 @@
 
     function onPlayerReady() {
         videoPlayer.addEventListener(brightcove.api.events.MediaEvent.BEGIN, mediaEventHandler);
+        videoPlayer.addEventListener(brightcove.api.events.MediaEvent.PLAY, mediaEventHandler);
     }
 
     function mediaEventHandler(pEvent) {
